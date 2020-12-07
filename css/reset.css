@@ -137,7 +137,10 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0 0 1em 1em;
 }
 
 blockquote,

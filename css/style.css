@@ -281,6 +281,21 @@ a:hover {
   filter: drop-shadow(4px 4px 0 black);
 }
 
+.policy {
+  width: min(95%, 860px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.policy p {
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 0.8em 0;
+}
+
 footer {
   border-top: solid 1px grey;
   font-size: 0.8em;
