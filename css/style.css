@@ -1,0 +1,364 @@
+body {
+  /* fallback for old browsers */
+  --gradient-fallback: #FC466B;
+  /* Chrome 10-25, Safari 5.1-6 */
+  --gradient-webkit: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-linear: linear-gradient(to right, #3F5EFB, #FC466B);
+
+  background-color: #f9f9f9;
+  color: #202020;
+
+  font-family: "Poppins";
+}
+
+main {
+  width: min(95%, 1400px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  font-family: "Poppins";
+  color: #f9f9f9;
+  background: var(--gradient-fallback);
+  background: var(--gradient-webkit);
+  background: var(--gradient-linear);
+  border: none;
+  border-radius: 4px;
+  transition: 0.15s ease-out;
+}
+
+button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 0 black;
+}
+
+button:active {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 0 black;
+}
+
+button img {
+  width: 2em;
+  height: 2em;
+  padding-left: 0.6em;
+  transition: 0.15s ease-out;
+}
+
+button:hover>img {
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(3px 4px 0 black);
+}
+
+button:hover>span {
+  font-weight: 500;
+}
+
+
+a {
+  text-decoration: none;
+  color: #222;
+  transition: 0.1s linear;
+}
+
+a:hover {
+  transform: translate(-2px, -2px);
+}
+
+.main-button {
+  font-size: 0.8em;
+  padding: 1em;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.main-button img {
+  width: 2.2em;
+  height: 2.2em;
+  padding-left: 0.8em;
+  transition: 0.15s ease-out;
+}
+
+.main-button img:hover {
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(3px 4px 0 black);
+}
+
+.main-button img:active {
+  transform: translate(-1px, -1px);
+  filter: drop-shadow(2px 2px 0 black);
+}
+
+#other-button {
+  display: none;
+}
+
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px grey;
+  height: 8vh;
+  padding: 0 2vw;
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+}
+
+.logotype img {
+  width: 36px;
+  height: 36px;
+  padding-right: min(2vw, 10px);
+}
+
+.hero {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.splide {
+  border-radius: 5px;
+  margin: 4vh auto;
+}
+
+.splide__slide img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.splide::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  content: '';
+}
+
+.splide__arrow:hover {
+  transform: translateY(-15px) !important;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta p {
+  line-height: 1.2em;
+  max-width: 76%;
+}
+
+.content-section {
+  width: min(100%, 1000px);
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding-bottom: 1vh;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.small-separator {
+  width: 6em;
+  height: 4px;
+  margin: 0 auto;
+  background: var(--gradient-fallback);
+  background: var(--gradient-webkit);
+  background: var(--gradient-linear);
+  border-radius: 20%;
+}
+
+.features-grid {
+  padding-top: 3vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: auto;
+  column-gap: 2%;
+  row-gap: 2vh;
+}
+
+.feature-element {
+  box-shadow: 0 0 6px 0 rgba(123, 123, 123, 0.05);
+  border-radius: 3px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: auto;
+}
+
+.feature-img {
+  background-color: lightgray;
+  padding: 2vh 0;
+}
+
+.feature-img img {
+  border-radius: 3px 0 0 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2vw 0 min(4vw, 20px);
+}
+
+.feature-text h1 {
+  padding-bottom: 2vh;
+  font-size: 1.4em;
+}
+
+.feature-text p {
+  line-height: 1.2em;
+}
+
+.feature-text {
+  flex-direction: column;
+}
+
+.more-text {
+  text-align: center;
+  align-self: center;
+}
+
+.subtitle {
+  padding-top: 1vh;
+  font-size: 0.6em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.support-information {
+  height: 16em;
+  width: min(100%, 760px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.support-information p {
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.support-information a img {
+  transition: 0.1s linear;
+}
+
+.support-information a:hover img {
+  filter: drop-shadow(4px 4px 0 black);
+}
+
+footer {
+  border-top: solid 1px grey;
+  font-size: 0.8em;
+  color: grey;
+  margin-top: 3em;
+  padding: 3vh 0;
+  width: min(100%, 1000px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 980px) {
+  .cta {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cta p {
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+
+  .features-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-button {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 1.4em;
+  }
+
+  .feature-text p {
+    line-height: 1.4em;
+    font-size: 0.8em;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 3em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #202020;
+    color: #f9f9f9;
+  }
+
+  .subtitle {
+    color: rgba(200, 200, 200, 0.8);
+  }
+
+  .feature-element {
+    background-color: rgb(60, 60, 60);
+  }
+
+  .header {
+    background-color: #202020;
+  }
+
+  .feature-img {
+    background-color: rgb(160, 160, 160);
+  }
+
+  a {
+    color: #f9f9f9;
+  }
+
+}

@@ -1,0 +1,12 @@
+{
+  "short_name": "Panorama Tab",
+  "name": "Panorama Tab",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "128x128"
+  }],
+  "start_url": "/index.html",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
