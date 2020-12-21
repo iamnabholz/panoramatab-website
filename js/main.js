@@ -35,6 +35,13 @@ function setButton() {
     } else {
       document.getElementById("browser").innerHTML = "Download For " + name;
       document.getElementById("browser-icon").src = "img/" + name.toLowerCase() + ".png";
+      if (name === "Firefox") {
+        document.getElementById("link").href = "https://addons.mozilla.org/addon/panorama-tab/";
+      } else if (name === "Edge") {
+        document.getElementById("link").href = "https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke";
+      } else if (name === "Chrome") {
+        document.getElementById("link").href = "https://addons.mozilla.org/addon/panorama-tab/";
+      }
     }
   }
 }
