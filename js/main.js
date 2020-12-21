@@ -30,11 +30,12 @@ function setButton() {
     }
 
     if (name == "other") {
-      document.getElementById("browser-button").style.display = "none";
+      document.getElementById("link").style.display = "none";
       document.getElementById("other-button").style.display = "flex";
     } else {
       document.getElementById("browser").innerHTML = "Download For " + name;
       document.getElementById("browser-icon").src = "img/" + name.toLowerCase() + ".png";
+
       if (name === "Firefox") {
         document.getElementById("link").href = "https://addons.mozilla.org/addon/panorama-tab/";
       } else if (name === "Edge") {
