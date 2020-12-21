@@ -16,7 +16,7 @@ function setButton() {
 
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent)) {
     document.getElementById("browser-button").style.display = "none";
-    document.getElementById("other-button").style.display = "block";
+    document.getElementById("other-button").style.display = "flex";
   } else {
 
     if (agent.includes("Edg")) {
@@ -31,14 +31,10 @@ function setButton() {
 
     if (name == "other") {
       document.getElementById("browser-button").style.display = "none";
-      document.getElementById("other-button").style.display = "block";
+      document.getElementById("other-button").style.display = "flex";
     } else {
       document.getElementById("browser").innerHTML = "Download For " + name;
       document.getElementById("browser-icon").src = "img/" + name.toLowerCase() + ".png";
     }
   }
-}
-
-function stuff() {
-  console.log("hello");
 }

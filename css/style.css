@@ -100,6 +100,7 @@ a:hover {
 
 #other-button {
   display: none;
+  align-items: center;
 }
 
 .header {
@@ -346,7 +347,17 @@ footer {
 
   footer {
     flex-direction: column;
+    align-items: flex-start;
     height: 3em;
+  }
+
+  footer>span {
+    padding-bottom: 2em;
+  }
+
+  .policy-link {
+    order: 1;
+    padding-bottom: 4em;
   }
 }
 
