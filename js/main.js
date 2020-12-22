@@ -41,7 +41,7 @@ function setButton() {
       } else if (name === "Edge") {
         document.getElementById("link").href = "https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke";
       } else if (name === "Chrome") {
-        document.getElementById("link").href = "https://addons.mozilla.org/addon/panorama-tab/";
+        document.getElementById("link").href = "https://chrome.google.com/webstore/detail/panorama-tab/einjlbiknhpkccefknpcnmnmmnhigcbc";
       }
     }
   }
