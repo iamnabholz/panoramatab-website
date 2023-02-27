@@ -12,7 +12,7 @@ document.onload = setButton();
 
 function setButton() {
   const agent = navigator.userAgent;
-  var name;
+  let name;
 
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent)) {
     document.getElementById("browser-button").style.display = "none";
@@ -23,13 +23,13 @@ function setButton() {
       name = "Edge";
     } else if (agent.includes("Firefox")) {
       name = "Firefox"
-    } else if (agent.includes("Chrome") && agent.includes("Edg") == false) {
+    } else if (agent.includes("Chrome") && agent.includes("Edg") === false) {
       name = "Chrome"
     } else {
       name = "other"
     }
 
-    if (name == "other") {
+    if (name === "other") {
       document.getElementById("link").style.display = "none";
       document.getElementById("other-button").style.display = "flex";
     } else {

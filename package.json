@@ -6,8 +6,6 @@
   "license": "",
   "author": "Lukas Nabholz",
   "homepage": "/",
-  "scripts": {
-  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }
