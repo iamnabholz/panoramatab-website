@@ -23,26 +23,30 @@
 </head>
 
 <body>
-  <header>
-    <div class="logotype">
-      <img alt="New Tab Icon" src="icon.png" />
-      <p>Panorama Tab</p>
-    </div>
-
-    <div class="main-button">
-      Available For
-      <a href="https://chrome.google.com/webstore/detail/panorama-tab/einjlbiknhpkccefknpcnmnmmnhigcbc">
-        <img alt="Chrome Icon" src="/img/chrome.png" /></a>
-
-      <a href="https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke">
-        <img alt="Edge Icon" src="/img/edge.png" /></a>
-
-      <a href="https://addons.mozilla.org/addon/panorama-tab/">
-        <img alt="Firefox Icon" src="/img/firefox.png" /></a>
-    </div>
-  </header>
-
   <main>
+    <div class="header-wrapper">
+      <img class="logotype" alt="New Tab Icon" src="icon.png" />
+      <p style="font-size: 2rem;">Panorama Tab</p>
+      <div class="main-button">
+        Available On
+        <a href="https://chrome.google.com/webstore/detail/panorama-tab/einjlbiknhpkccefknpcnmnmmnhigcbc">
+          <img alt="Chrome Icon" src="/img/chrome.png" /></a>
+
+        <a href="https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke">
+          <img alt="Edge Icon" src="/img/edge.png" /></a>
+
+        <a href="https://addons.mozilla.org/addon/panorama-tab/">
+          <img alt="Firefox Icon" src="/img/firefox.png" /></a>
+      </div>
+    </div>
+
+    <!--<a id="link" href="https://addons.mozilla.org/addon/panorama-tab/">
+      <button>
+        <span id="browser">Download For Firefox</span>
+        <img id="browser-icon" alt="Firefox Icon" src="/img/firefox.png" />
+      </button>
+    </a>-->
+
     <section class="hero">
       <div class="splide">
         <div class="splide__track">
@@ -68,45 +72,34 @@
           </div>
         </div>
       </div>
-      <div class="cta">
-        <p>
-          Panorama Tab replaces your browser new tab with a unique design and set of features that you can
-          customize to fit your style.
-        </p>
-        <a id="link" href="https://addons.mozilla.org/addon/panorama-tab/">
-          <button>
-            <span id="browser">Download For Firefox</span>
-            <img id="browser-icon" alt="Firefox Icon" src="/img/firefox.png" />
-          </button>
-        </a>
-
-        <div class="main-button" id="other-button">
-          Available For
-          <a href="https://chrome.google.com/webstore/detail/panorama-tab/einjlbiknhpkccefknpcnmnmmnhigcbc">
-            <img alt="Chrome Icon" src="/img/chrome.png" /></a>
-
-          <a href="https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke">
-            <img alt="Edge Icon" src="/img/edge.png" /></a>
-
-          <a href="https://addons.mozilla.org/addon/panorama-tab/">
-            <img alt="Firefox Icon" src="/img/firefox.png" /></a>
-        </div>
-      </div>
     </section>
+    <p class="paragraph">
+      Panorama Tab replaces your browser new tab with a unique design and set of features that you can
+      customize to fit your style.
+    </p>
 
-    <div style="padding-top: 2em;">
-      <a href="https://www.producthunt.com/posts/panorama-tab?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-panorama-tab"
-        target="_blank"><img
-          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=278803&theme=light"
-          alt="Panorama Tab - Replace your browser new tab with a more custom experience | Product Hunt"
-          style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    <div class="main-button">
+      <a href="https://chrome.google.com/webstore/detail/panorama-tab/einjlbiknhpkccefknpcnmnmmnhigcbc">
+        <img alt="Chrome Icon" src="/img/chrome.png" /></a>
+
+      <a href="https://microsoftedge.microsoft.com/addons/detail/panorama-tab/pfpebaokeeiinfhcklkomfbdejpfaoke">
+        <img alt="Edge Icon" src="/img/edge.png" /></a>
+
+      <a href="https://addons.mozilla.org/addon/panorama-tab/">
+        <img alt="Firefox Icon" src="/img/firefox.png" /></a>
     </div>
+
+    <a href="https://www.producthunt.com/posts/panorama-tab?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-panorama-tab"
+      target="_blank"><img
+        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=278803&theme=light"
+        alt="Panorama Tab - Replace your browser new tab with a more custom experience | Product Hunt"
+        style="width: 250px; height: 54px;" width="250" height="54" />
+    </a>
 
     <section class="content-section">
       <h1 class="title">Main Features</h1>
       <div class="small-separator"></div>
       <div class="features-grid">
-
         <div class="feature-element">
           <div class="feature-img">
             <img alt="Weather Icon" src="img/weather.png" />
@@ -149,7 +142,7 @@
           </div>
         </div>
 
-        <div class="feature-element">
+        <div class="feature-element" style="align-self: center;">
           <div class="feature-img">
             <img alt="Customization Icon" src="img/customization.png" />
           </div>
@@ -163,13 +156,20 @@
 
     <section class="content-section">
       <h1 class="title">Support Development</h1>
+      <div class="small-separator"></div>
       <div class="support-information">
         <p>You can support the development of Panorama Tab with a coffee :)
         </p>
         <a href="https://www.buymeacoffee.com/nabholz" target="_blank"><img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
             style="height: 60px !important;width: 217px !important;"></a>
-        <a href="https://nabholz.work/">nabholz.work &#8599;&#xFE0E;</a>
+        <span>
+          Panorama Tab
+          <br />
+          by Lukas Nabholz
+          <br /> <br />
+          <a href="https://nabholz.work/">nabholz.work</a>
+        </span>
       </div>
     </section>
 
@@ -179,10 +179,6 @@
       </span>
 
       <a class="policy-link" href="/privacy policy.html">Privacy Policy</a>
-
-      <span>Panorama Tab <br /> <br />
-        <a style="display: block;" href="https://nabholz.work/"> by Lukas Nabholz</a>
-      </span>
     </footer>
   </main>
 
